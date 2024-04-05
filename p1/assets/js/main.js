@@ -97,20 +97,6 @@ console.log("8", beatlesTitles);
 const totalYears = songs.reduce((acc, curr) => acc + curr.year, 0);
 console.log("9", totalYears);
 
-//Extra destructuring
-
-const clima = {
-  ciudad: "buenos Aires",
-  temperatura: 30,
-  unidad: "Grados Centigrados",
-};
-
-const mostrarClima = ({ ciudad, temperatura, unidad }) => {
-  return `El clima en ${ciudad} es de ${temperatura} ${unidad}`;
-};
-
-console.log(mostrarClima(clima));
-
 //10. Create a module that exports a function to calculate the average release year of the songs in the input array. (Tip: Use reduce.)
 
 import { averageYear } from "./utils.js";
